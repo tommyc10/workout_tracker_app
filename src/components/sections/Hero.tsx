@@ -1,3 +1,4 @@
+import { Button } from "../shared/Button";
 import { Container } from "../shared/Container"
 import { Paragraph } from "../shared/Paragraph";
 
@@ -50,9 +51,19 @@ export const Hero = () => {
                   placeholder="Enter your email"
                   className="w-full py-3 outline-none bg-transparent"
                 />
+                <Button className="min-w-max text-white">
+                  <span className="relative z-10">Get Started</span>
+                </Button>
                 </form>
                 </div>
                 </div>
+            </div>
+
+            <div className="flex flex-1 lg:w-1/2 lg:h-auto relative lg:max-w-none lg:mx-0 mx-auto max-w-3xl">
+              <img src="https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg" alt="Hero Image Workout"
+              width={2350}
+              height={2359}
+              className="lg:absolute lg:w-full lg:h-full rounded-3xl object-cover lg:max-h-none max-h-96" />
             </div>
             </Container>
         </section>
