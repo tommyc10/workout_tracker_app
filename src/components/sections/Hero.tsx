@@ -19,6 +19,40 @@ export const Hero = () => {
                 <Paragraph className="mt-8">
                 Revolutionize your fitness journey with TrackrAI. The intelligent workout tracker that adapts to your goals and maximizes your results
                 </Paragraph>
+                <div className="mt-10 w-full flex max-w-md mx-auto lg:mx-0">
+                <div className="flex sm:flex-row flex-col gap-5 w-full">            
+                <form action="#"
+                className="py-1 pl-6 w-full pr-1 flex gap-3 items-center text-heading-3
+                                          shadow-lg shadow-box-shadow border border-box-border
+                                          bg-box-bg rounded-full ease-linear focus-within:bg-body
+                                          focus-within:border-primary"
+                >
+                <span className="min-w-max pr-2 border-r border-box-border">
+                  {" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className="w-5 h-5"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M21.75 9v.906a2.25 2.25 0 01-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 001.183 1.981l6.478 3.488m8.839 2.51l-4.66-2.51m0 0l-1.023-.55a2.25 2.25 0 00-2.134 0l-1.022.55m0 0l-4.661 2.51m16.5 1.615a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V8.844a2.25 2.25 0 011.183-1.98l7.5-4.04a2.25 2.25 0 012.134 0l7.5 4.04a2.25 2.25 0 011.183 1.98V19.5z"
+                    />
+                  </svg>
+                </span>
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="w-full py-3 outline-none bg-transparent"
+                />
+                </form>
+                </div>
+                </div>
             </div>
             </Container>
         </section>
