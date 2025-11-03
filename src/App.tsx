@@ -5,7 +5,7 @@ import './index.css'
 function App() {
   return (
     <Layout title="TrackrAI">
-      <Hero />
+      < Hero />
     </Layout>
   )
 }

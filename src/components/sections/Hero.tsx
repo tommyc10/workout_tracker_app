@@ -1,6 +1,7 @@
 import { Button } from "../shared/Button";
 import { Container } from "../shared/Container"
 import { Paragraph } from "../shared/Paragraph";
+import { Numbers } from "./Numbers";
 
 export const Hero = () => {
     return (
@@ -66,6 +67,7 @@ export const Hero = () => {
               className="lg:absolute lg:w-full lg:h-full rounded-3xl object-cover lg:max-h-none max-h-96" />
             </div>
             </Container>
+            <Numbers />
         </section>
     );
 };
