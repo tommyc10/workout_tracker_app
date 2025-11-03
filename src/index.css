@@ -1,0 +1,71 @@
+@import 'tailwindcss';
+
+/* Light theme variables */
+@theme {
+  --color-bg: 255 255 255;        /* Main background color (white) */
+  --color-box: 255 255 255;       /* Card/component background (white) */
+  --box-border: 229 231 235;      /* Border color for cards/boxes (light gray) */
+  --box-sd: 226 232 240 / 0.5;    /* Box shadow color with opacity (subtle gray) */
+  --heading-1: 23 37 84;          /* Primary heading color (dark blue) */
+  --heading-2: 31 41 55;          /* Secondary heading color (dark gray-blue) */
+  --heading-3: 55 65 81;          /* Tertiary heading color (medium gray) */
+}
+
+/* Dark theme variables - Applied when html has 'dark' class */
+html.dark {
+  --color-bg: 3 7 18;             /* Dark background color (very dark blue) */
+  --color-box: 17 24 39;          /* Dark card/component background (dark blue-gray) */
+  --box-border: 243 244 246 / 0.1; /* Subtle border for dark mode (light gray with low opacity) */
+  --box-sd: transparent;          /* No shadow in dark mode for cleaner look */
+  --heading-1: 255 255 255;       /* Primary heading in dark mode (white) */
+  --heading-2: 243 244 246;       /* Secondary heading in dark mode (light gray) */
+  --heading-3: 209 213 219;       /* Tertiary heading in dark mode (medium gray) */
+}
+
+
+/* Custom utility classes using CSS variables */
+@layer utilities {
+  /* Main background utility - applies to body/page background */
+  .bg-body {
+    background-color: rgb(var(--color-bg));
+  }
+  
+  /* Card/box background utility - for components and containers */
+  .box-box {
+    background-color: rgb(var(--color-box));
+  }
+  
+  /* Border utility for cards and components */
+  .box-border {
+    border-color: rgb(var(--box-border));
+  }
+  
+  /* Box shadow utility - creates subtle elevation effect */
+  .box-sd {
+    box-shadow: 0 4px 6px -1px rgb(var(--box-sd)), 0 2px 4px -2px rgb(var(--box-sd));
+  }
+  
+  /* Primary heading color utility - for main titles */
+  .heading-1 {
+    color: rgb(var(--heading-1));
+  }
+  
+  /* Secondary heading color utility - for subtitles */
+  .heading-2 {
+    color: rgb(var(--heading-2));
+  }
+  
+  /* Tertiary heading color utility - for smaller headings */
+  .heading-3 {
+    color: rgb(var(--heading-3));
+  }
+}
+
+/* Global styles */
+html {
+  scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+}
+
+body {
+  font-family: 'Raleway', sans-serif; /* Primary font for the application */
+}
