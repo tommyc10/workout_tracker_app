@@ -26,7 +26,7 @@ export default function BentoBox() {
                     {features.map((feature, idx) => (
                         <div 
                             key={idx}
-                            className="relative overflow-hidden rounded-3xl backdrop-blur-xl bg-white/5 dark:bg-white/5 border border-white/10 shadow-2xl p-6 hover:-translate-y-1 transition-transform"
+                            className="relative overflow-hidden rounded-3xl backdrop-blur-xl bg-white/5 dark:bg-white/5 border border-white/10 shadow-2xl p-6 hover:-translate-y-2 transition-transform"
                         >
                             
                             <div className="absolute inset-0 bg-linear-to-br from-blue-500/10 via-violet-500/10 to-transparent pointer-events-none"></div>
@@ -37,7 +37,7 @@ export default function BentoBox() {
                                 <img 
                                     src={feature.image} 
                                     alt={feature.title} 
-                                    className="mt-10 rounded-2xl w-full object-cover size-full object-top" 
+                                    className="mt-10 rounded-2xl w-full h-full object-cover size-full object-top" 
                                 />
                             </div>
                         </div>
