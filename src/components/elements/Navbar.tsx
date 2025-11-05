@@ -20,7 +20,7 @@ export const NavBar = () => {
             <nav className="w-full flex justify-between gap-6 relative">
                 <div className="min-w-max inline-flex relative">
                     <a href="/" className="relative flex items-center gap-3">
-                     <img src={logo} alt="TrackrAI" className="w-10 h-10" />
+                     <img src={logo} alt="TrackrAI logo" className="w-15 h-11"/>
                     <div className="inline-flex text-lg font-semibold heading-1">
                     TrackrAI
                     </div>

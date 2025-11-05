@@ -2,6 +2,7 @@ import { Button } from "../shared/Button";
 import { Container } from "../shared/Container"
 import { Paragraph } from "../shared/Paragraph";
 import { Numbers } from "./Numbers";
+import BentoBox from "./BentoBox";
 
 export const Hero = () => {
     return (
@@ -19,7 +20,7 @@ export const Hero = () => {
                 Start Your Workout Tracking <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-violet-600 ml-2">with AI</span>
                 </h1>
                 <Paragraph className="mt-8">
-                Revolutionize your fitness journey with TrackrAI. The intelligent workout tracker that adapts to your goals and maximizes your results
+                Revolutionise your fitness journey with TrackrAI. The intelligent workout tracker that adapts to your goals to maximise your results
                 </Paragraph>
                 <div className="mt-10 w-full flex max-w-md mx-auto lg:mx-0">
                 <div className="flex sm:flex-row flex-col gap-5 w-full">            
@@ -68,6 +69,7 @@ export const Hero = () => {
             </div>
             </Container>
             <Numbers />
+            <BentoBox />
         </section>
     );
 };
